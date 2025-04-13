@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- style sheet -->
+
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;900&display=swap"   rel="stylesheet">
+
+    <!-- font icons  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- script -->
+
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+
+   <!--  nav bar  -->
+
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div>
+                    <h2>FOOD DELIGHTS <i class="fa-solid fa-utensils"></i></h2>
+                    
+                </div>
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+                    <div class="cart-count">0</div>
+                </div>
+            </div>
+        </nav>
+
+   <!--  main container -->
+
+        <main>
+            <div class="container">
+                <div class="menu-container">
+                    <div class="food-list">
+                        <div class="food-img">
+                            <img src="image/dosa.png" alt="no" class="img">
+                        </div>
+                        <p class="food-tittle">Plain</p>
+                        <p class="food-price">Rs.40</p>
+                        <div class="add-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="food-list">
+                        <div class="food-img">
+                            <img src="image/paper dosa.png" alt="no" class="img">
+                        </div>
+                        <p class="food-tittle">Paper Dosa</p>
+                        <p class="food-price">Rs.65</p>
+                        <div class="add-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="food-list">
+                        <div class="food-img">
+                            <img src="image/onion dosa.png" alt="no" class="img">
+                        </div>
+                        <p class="food-tittle">Onion Doas</p>
+                        <p class="food-price">Rs.50</p>
+                        <div class="add-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="food-list">
+                        <div class="food-img">
+                            <img src="image/egg podi mass.png" alt="no" class="img">
+                        </div>
+                        <p class="food-tittle">Egg podimass</p>
+                        <p class="food-price">Rs.40</p>
+                        <div class="add-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="food-list">
+                        <div class="food-img">
+                            <img src="image/egg porata.png" alt="no" class="img">
+                        </div>
+                        <p class="food-tittle">Egg Parota</p>
+                        <p class="food-price">Rs.80</p>
+                        <div class="add-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="food-list">
+                        <div class="food-img">
+                            <img src="image/chicken fry.png" alt="no" class="img">
+                        </div>
+                        <p class="food-tittle">Chicken Fry</p>
+                        <p class="food-price">Rs.120</p>
+                        <div class="add-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="food-list">
+                        <div class="food-img">
+                            <img src="image/egg veechu.png" alt="no" class="img">
+                        </div>
+                        <p class="food-tittle">Egg Veechu</p>
+                        <p class="food-price">Rs.30</p>
+                        <div class="add-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="food-list">
+                        <div class="food-img">
+                            <img src="image/biriyani.png" alt="no" class="img">
+                        </div>
+                        <p class="food-tittle">Chicken Biriyani</p>
+                        <p class="food-price">Rs.130</p>
+                        <div class="add-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+
+       <!--  cart container -->
+
+                <div class="cart-container">
+                    <div class="cart-header">
+                        <h3>Cart item</h3>
+                        <div class="x-btn">
+                            <i class="fa-solid fa-xmark" id="close-btn"></i>
+                        </div>
+                        <div class="side-arrow-btn">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                    </div>
+
+                    <div id="cart-box" class="cart-box">
+                        <!--  <div>
+                            <div class="cart-item">
+                                <div class="cart-img">
+                                    <img src="image/biriyani.png" alt="no">
+                                </div>
+                                <div class="food-details">
+                                    <p class="cart-tittle">Chicken Biriyani</p>
+                                    <p class="cart-price">Rs.130</p>
+                                    <input type="number" name="qty" class="qty">
+                                </div>
+                                <p class="cart-amount">Rs.130</p>
+                                <div class="cart-item-remove-btn" >
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </div> 
+                        </div> 
+                        <div>
+                            <div class="cart-item">
+                                <div class="cart-img">
+                                    <img src="image/dosa.png" alt="no">
+                                </div>
+                                <div class="food-details">
+                                    <p class="cart-tittle">Plain</p>
+                                    <p class="cart-price">Rs.40</p>
+                                    <input type="number" name="qty" class="qty">
+                                </div>
+                                <p class="cart-amount">Rs.130</p>
+                                <div class="cart-item-remove-btn" >
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                        </div>  --> 
+                       
+                    </div> 
+                    <div>
+                        <div class="total-amt">
+                            <p><span class="span">Total</span><span class="total-value"> Rs.175</span></p>
+                        </div>
+                        <div class="order-btn">
+                            <button>Place Order</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </main>
+    </header>
+</body>
+  
+  
+</html>
