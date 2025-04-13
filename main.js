@@ -98,7 +98,7 @@
     //change qunatity function
 
     function changeQty() {
-        if(isNaN(event.target.value) || event.target.value<=1){
+        if(isNaN(event.target.value) || event.target.value<=0){
             event.target.value = 0
         }
 
