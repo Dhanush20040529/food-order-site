@@ -99,7 +99,7 @@
 
     function changeQty() {
         if(isNaN(event.target.value) || event.target.value<=1){
-            event.target.value = 1
+            event.target.value = 0
         }
 
         loadContent()
