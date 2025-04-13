@@ -1,5 +1,5 @@
  
-// hello 
+
  /* || cart show and hide function || */
 
     const cartCloseBtn = document.getElementById("close-btn");
@@ -51,6 +51,9 @@
         const quantity = document.querySelectorAll(".qty");
         quantity.forEach((change)=>{
             change.addEventListener("change",changeQty)
+        })
+        quantity.forEach((change)=>{
+            change.addEventListener("keyup",changeQty)
         })
 
         // Add cart items
