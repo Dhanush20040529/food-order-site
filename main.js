@@ -1,5 +1,4 @@
 
-
  /* || cart show and hide function || */
 
     const cartCloseBtn = document.getElementById("close-btn");
