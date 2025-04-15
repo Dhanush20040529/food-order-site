@@ -154,11 +154,12 @@
                         `
 
                       
-
+        
         cartFoodList.appendChild(div);
         console.log(div)
         loadContent()
         addedItemCount()
+        /* alert(`${tittle} added in cart`); */
 
         
         
@@ -188,12 +189,14 @@
     
     // cart count function
     
-    function addedItemCount(){
+     function addedItemCount(){
         const cartCount = document.querySelector(".cart-count")
         console.log(cartCount)
         let count = itemList.length;
         cartCount.textContent = count;
         console.log(count) 
+        
+        
     }
  
 
